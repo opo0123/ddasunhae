@@ -1,0 +1,44 @@
+.cat-story {
+  width: 100%;
+}
+.cat-story .inner {
+  padding: 100px 40px;
+}
+
+/* title */
+.cat-story h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.cat-contents {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+
+/* img */
+.cat-right {
+  width: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* explain */
+.cat-left {
+  width: 40%;
+  font-size: 30px;
+}
+.cat-left p {
+  color: #9d8a74;
+  line-height: 1.5;
+  margin: 40px 0;
+}
+.cat-left .highlight {
+  color: #bf6102;
+  font-weight: 700;
+}

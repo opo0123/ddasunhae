@@ -1,0 +1,12 @@
+.about .inner {
+  width: 100%;
+  height: 1050px;
+  padding: 100px 40px;
+}
+
+.about-bg {
+  background: url(../images/about.jpg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}

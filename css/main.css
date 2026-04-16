@@ -1,0 +1,53 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap");
+
+/* css */
+@import url("reset.css");
+@import url("header.css");
+@import url("visual.css");
+@import url("about.css");
+@import url("catstory.css");
+@import url("donationstory.css");
+@import url("chart.css");
+@import url("sponsor.css");
+@import url("store.css");
+@import url("footer.css");
+
+/* main */
+* {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.wrap {
+  width: 100%;
+}
+.inner {
+  width: 90%;
+  max-width: 1920px;
+  min-width: 390px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 폰트 사이즈만 조정 */
+.btn {
+  background: none;
+  border: 0;
+
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #fff;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+  background-color: #9d8a74;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #bf6102;
+  transform: scale(1.03);
+}
