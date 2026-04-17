@@ -1,0 +1,96 @@
+/* pc2 */
+@media (max-width: 1200px) {
+  /* header */
+  .logo p {
+    font-size: 35px;
+  }
+  .menu {
+    font-size: 22px;
+    gap: 2%;
+  }
+
+  /* cat-story */
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  /* header */
+  .header {
+    height: 50px;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .logo p {
+    font-size: 30px;
+  }
+  .menu {
+    display: none;
+  }
+  .hambuger {
+    display: block;
+  }
+
+  /* visual */
+  .visual-wrap {
+    aspect-ratio: auto;
+    margin-top: 50px;
+  }
+  .visual h1 {
+    font-size: 26px;
+    top: 14%; /* 기존 20% */
+  }
+
+  .visual-contents {
+    font-size: 18px;
+    top: 38%; /* 기존 45% */
+  }
+
+  /* cat story */
+  .cat-story h2 {
+    font-size: 32px;
+  }
+  .cat-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+  }
+  .cat-left {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .cat-left .btn {
+    font-size: 20px;
+  }
+  .cat-left .no-br {
+    display: none;
+  }
+}
+
+/* mobile */
+@media (max-width: 390px) {
+  /* header */
+  .logo p {
+    font-size: 26px;
+  }
+
+  /* visual */
+  .visual h1 {
+    font-size: 24px;
+    top: 8%;
+  }
+
+  .visual-contents {
+    font-size: 14px;
+    top: 38%;
+  }
+
+  /* cat story */
+    .cat-story h2 {
+    font-size: 26px;
+  }
+  .cat-left .btn {
+    font-size: 16px;
+  }
+}

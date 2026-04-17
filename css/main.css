@@ -12,6 +12,20 @@
 @import url("sponsor.css");
 @import url("store.css");
 @import url("footer.css");
+@import url("resposive.css");
+
+/* figma 스타일 불러오기 */
+:root {
+  /* Color styles */
+  --modal: rgba(253, 200, 158, 1);
+  --gray: rgba(119, 119, 119, 1);
+  --bg--common: rgba(247, 241, 229, 1);
+  --brown: rgba(157, 138, 116, 1);
+  --highlight: rgba(191, 97, 2, 1);
+
+  /* Effect styles */
+  --btn: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
 
 /* main */
 * {
@@ -23,8 +37,8 @@
   width: 100%;
 }
 .inner {
-  width: 90%;
-  max-width: 1920px;
+  width: 95%;
+  max-width: 1200px;
   min-width: 390px;
   margin: 0 auto;
 }
@@ -42,7 +56,7 @@ img {
   border-radius: 10px;
   font-size: 30px;
   color: #fff;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: var(--btn);
   background-color: #9d8a74;
   transition: transform 0.3s ease;
 }

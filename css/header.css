@@ -1,3 +1,6 @@
+.wrap {
+  position: relative;
+}
 .header {
   position: fixed;
   top: 0;
@@ -6,14 +9,10 @@
   height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #f7f1e5;
   z-index: 9999;
-}
-.header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  padding: 0 40px;
 }
 
 /* logo */
@@ -30,7 +29,10 @@
   width: 100px;
   height: 100px;
 }
-.logo h2 {
+.logo p {
+  white-space: nowrap;
+  font-size: 55px;
+  font-weight: bold;
   padding-bottom: 8px;
 }
 
@@ -38,15 +40,20 @@
 .menu-wrap {
   position: relative;
   width: 100%;
+  height: 100%;
   max-width: 700px;
+  text-align: center;
 }
 .menu {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 10%;
   font-size: 26px;
   font-weight: bold;
 }
 .menu li {
+    height: 100%;
   display: flex;
 }
 .menu li a {
@@ -54,6 +61,7 @@
   display: block;
   color: #9d8a74 !important;
   transition: all 0.3s;
+  line-height: 100px;
 }
 .menu > li > a::after {
   content: "";
@@ -78,5 +86,30 @@
 /* mobile menu */
 .hambuger {
   display: none;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.hambuger span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--brown);
+}
+.hambuger span:nth-child(1) {
+  top: 0;
+}
+.hambuger span:nth-child(2) {
+  top: 50%;
+}
+.hambuger span:nth-child(3) {
+  top: 100%;
 }
 
+/* 호버 시 메뉴 나오게 추가 */

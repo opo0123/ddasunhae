@@ -1,13 +1,14 @@
 .cat-story {
   width: 100%;
+  background-color: #f7f1e5;
 }
 .cat-story .inner {
-  padding: 100px 40px;
+  padding: 188px 00px;
 }
 
 /* title */
 .cat-story h2 {
-  font-size: 40px;
+  font-size: clamp(24px, 2.2vw, 40px);
   font-weight: bold;
   text-align: center;
   margin-bottom: 100px;
@@ -16,9 +17,8 @@
 .cat-contents {
   display: flex;
   width: 100%;
-  justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 6%;
 }
 
 /* img */
@@ -27,18 +27,27 @@
   border-radius: 10px;
   overflow: hidden;
 }
-
+.cat-right img{
+  object-fit: cover;
+}
 /* explain */
 .cat-left {
-  width: 40%;
-  font-size: 30px;
+  width: 60%;
+  /* font-size: 30px; */
+  font-size: clamp(18px, 1.6vw, 30px);
+  /* white-space: nowrap; */
 }
 .cat-left p {
   color: #9d8a74;
   line-height: 1.5;
-  margin: 40px 0;
+  margin-bottom: 40px ;
 }
 .cat-left .highlight {
   color: #bf6102;
   font-weight: 700;
+}
+
+.cat-left .btn {
+  padding: clamp(12px, 1.2vw, 20px) clamp(16px, 1.6vw, 25px);
+  font-size: clamp(16px, 1.6vw, 30px);
 }
