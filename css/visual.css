@@ -1,55 +1,72 @@
 .visual {
-  width: 100%;
-  max-width: 1920px;
+  position: relative;
+  /* max-width: 1920px; */
   margin: 0 auto;
+  aspect-ratio: 192/58;
+  margin-top: 100px;
 }
 
 .visual-wrap {
   position: relative;
   width: 100%;
-  margin-top: 100px;
+  height: 100%;
+  /* aspect-ratio: 192/58; */
 }
-
-#visual1 {
-  position: relative;
+.visual img {
+  /* position: relative; */
+  position: absolute;
+  top: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
+  /* aspect-ratio: 192/58; */
   object-fit: cover;
   object-position: right center;
   z-index: 1;
 }
+.visual .inner {
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 99;
+}
 
 .visual h1 {
-  position: absolute;
+  font-size: clamp(28px, 4vw, 70px);
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5%;
+  /* position: absolute;
   top: clamp(40px, 20%, 120px);
   left: clamp(20px, 10%, 200px);
   font-size: clamp(28px, 5vw, 70px);
-  font-weight: bold;
-  color: #fff;
-  z-index: 999;
+  
+  z-index: 999; */
 }
 
 /* 🔥 내용 */
 .visual-contents {
-  position: absolute;
-  top: clamp(90px, 45%, 260px);
-  left: clamp(20px, 10%, 220px);
   color: #fff;
-  z-index: 999;
 }
 
 .visual-txt {
-  font-size: clamp(14px, 2.5vw, 40px);
-  font-weight: 600;
+  font-size: clamp(14px, 2.5vw, 32px);
+  margin-bottom: 2%;
 }
 
 /* 🔥 버튼 */
 .visual .btn {
-  margin-top: clamp(12px, 2vw, 30px);
+  /* margin-top: clamp(12px, 2vw, 30px);
   padding: clamp(6px, 1.5vw, 16px) clamp(8px, 2vw, 30px);
-  font-size: clamp(12px, 1.5vw, 40px);
-  border-radius: 8px;
+   */
+
+  font-size: clamp(12px, 1.5vw, 28px);
   background-color: #9d8a74;
   color: #fff;
   border: none;
+}
+
+#tablet-visual {
+  display: none;
 }

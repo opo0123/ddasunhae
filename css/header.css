@@ -12,7 +12,7 @@
   align-items: center;
   background-color: #f7f1e5;
   z-index: 9999;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 /* logo */
@@ -26,12 +26,12 @@
   color: #9d8a74;
 }
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: clamp(70px, 4vw, 100px);
+  height: clamp(70px, 4vw, 100px);
 }
 .logo p {
   white-space: nowrap;
-  font-size: 55px;
+  font-size: clamp(35px, 4vw, 50px);
   font-weight: bold;
   padding-bottom: 8px;
 }
@@ -53,7 +53,7 @@
   font-weight: bold;
 }
 .menu li {
-    height: 100%;
+  height: 100%;
   display: flex;
 }
 .menu li a {
@@ -87,6 +87,7 @@
 .hambuger {
   display: none;
   position: relative;
+  width: 100%;
   width: 40px;
   height: 20px;
   border: 0;

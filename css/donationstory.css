@@ -1,0 +1,35 @@
+.donation-story .inner {
+  padding: 15% 0;
+}
+.donation-story h2 {
+  margin-bottom: 12%;
+}
+.donation-contents {
+  width: 100%;
+  padding: 10% 8%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--bg--common);
+}
+.donation-contents li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.donation-contents img {
+  width: clamp(100px, 2vw, 70px);
+  border-radius: 50%;
+}
+
+.donation-contents p {
+  font-size: clamp(24px, 2vw, 36px);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.donation-contents span {
+  font-size: clamp(14px, 2vw, 18px);
+}

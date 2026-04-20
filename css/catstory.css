@@ -3,15 +3,12 @@
   background-color: #f7f1e5;
 }
 .cat-story .inner {
-  padding: 188px 00px;
+  padding: 15% 0;
 }
 
 /* title */
 .cat-story h2 {
-  font-size: clamp(24px, 2.2vw, 40px);
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 12%;
 }
 
 .cat-contents {
@@ -23,24 +20,25 @@
 
 /* img */
 .cat-right {
-  width: 40%;
+  width: 50%;
   border-radius: 10px;
   overflow: hidden;
 }
-.cat-right img{
-  object-fit: cover;
+.cat-right img {
+  width: clamp(200px, 100%, 500px);
+  height: clamp(200px, 100%, 500px);
 }
 /* explain */
 .cat-left {
-  width: 60%;
+  width: 50%;
   /* font-size: 30px; */
-  font-size: clamp(18px, 1.6vw, 30px);
+  font-size: clamp(18px, 2vw, 30px);
   /* white-space: nowrap; */
 }
 .cat-left p {
   color: #9d8a74;
   line-height: 1.5;
-  margin-bottom: 40px ;
+  margin-bottom: 40px;
 }
 .cat-left .highlight {
   color: #bf6102;
@@ -48,6 +46,8 @@
 }
 
 .cat-left .btn {
-  padding: clamp(12px, 1.2vw, 20px) clamp(16px, 1.6vw, 25px);
-  font-size: clamp(16px, 1.6vw, 30px);
+  min-width: 180px;
+  min-height: 45px;
+  padding: 4% 5%;
+  font-size: clamp(14px, 2vw, 30px);
 }

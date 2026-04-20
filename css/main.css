@@ -39,7 +39,7 @@
 .inner {
   width: 95%;
   max-width: 1200px;
-  min-width: 390px;
+  min-width: 350px;
   margin: 0 auto;
 }
 img {
@@ -51,8 +51,9 @@ img {
 .btn {
   background: none;
   border: 0;
-
-  padding: 20px 25px;
+  min-width: 110px;
+  /* padding: 20px 25px; */
+  padding: 2% 2.5%;
   border-radius: 10px;
   font-size: 30px;
   color: #fff;
@@ -64,4 +65,11 @@ img {
 .btn:hover {
   background-color: #bf6102;
   transform: scale(1.03);
+}
+
+/* title */
+h2 {
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: bold;
+  text-align: center;
 }

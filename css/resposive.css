@@ -1,30 +1,35 @@
 /* pc2 */
 @media (max-width: 1200px) {
   /* header */
-  .logo p {
-    font-size: 35px;
-  }
   .menu {
     font-size: 22px;
-    gap: 2%;
+    gap: 6%; /* 10% */
   }
-
-  /* cat-story */
+}
+/* chart */
+@media (max-width: 1000px) {
+  .chart-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+  }
+  .line {
+    width: 100% !important;
+  }
+  .pie {
+    width: 100% !important;
+  }
+  .prograss-container {
+    margin-top: 5%;
+  }
 }
 
 /* tablet */
 @media (max-width: 768px) {
+  .inner {
+    width: 85% !important;
+  }
   /* header */
-  .header {
-    height: 50px;
-  }
-  .logo img {
-    width: 50px;
-    height: 50px;
-  }
-  .logo p {
-    font-size: 30px;
-  }
   .menu {
     display: none;
   }
@@ -35,62 +40,43 @@
   /* visual */
   .visual-wrap {
     aspect-ratio: auto;
-    margin-top: 50px;
   }
-  .visual h1 {
-    font-size: 26px;
-    top: 14%; /* 기존 20% */
+  /* 비주얼 텍스트 위치 옮기기 */
+  .visual {
+    /* aspect-ratio: 7/4; */
+    /* min-height: 500px; */
+    aspect-ratio: 768/433;
+    background-color: beige;
   }
-
-  .visual-contents {
-    font-size: 18px;
-    top: 38%; /* 기존 45% */
+  #visual1 {
+    display: none;
+  }
+  #tablet-visual {
+    display: block;
+    /* aspect-ratio: 768/433; */
   }
 
   /* cat story */
-  .cat-story h2 {
-    font-size: 32px;
-  }
   .cat-contents {
     display: flex;
     flex-direction: column;
     gap: 6%;
   }
   .cat-left {
-    margin-top: 40px;
+    margin-top: 5%;
     text-align: center;
-  }
-  .cat-left .btn {
-    font-size: 20px;
   }
   .cat-left .no-br {
     display: none;
+  }
+
+  /* donation story */
+  .donation-contents {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
   }
 }
 
 /* mobile */
 @media (max-width: 390px) {
-  /* header */
-  .logo p {
-    font-size: 26px;
-  }
-
-  /* visual */
-  .visual h1 {
-    font-size: 24px;
-    top: 8%;
-  }
-
-  .visual-contents {
-    font-size: 14px;
-    top: 38%;
-  }
-
-  /* cat story */
-    .cat-story h2 {
-    font-size: 26px;
-  }
-  .cat-left .btn {
-    font-size: 16px;
-  }
 }

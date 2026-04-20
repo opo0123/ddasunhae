@@ -22,6 +22,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js" defer></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -57,10 +60,13 @@
       <section class="visual">
         <div class="visual-wrap">
           <img src="images/visual1.png" alt="visual1" id="visual1" />
-          <h1>따순해</h1>
-          <div class="visual-contents">
-            <p class="visual-txt">유기동물에게 따스한 희망을 전합니다 ☘️</p>
-            <button class="btn" type="submit">희망 전하러 가기</button>
+          <img src="images/visual-tablet.png" alt="" id="tablet-visual" />
+          <div class="inner">
+            <h1>따순해</h1>
+            <div class="visual-contents">
+              <p class="visual-txt">유기동물에게 따스한 희망을 전합니다 ☘️</p>
+              <button class="btn" type="submit">희망 전하러 가기</button>
+            </div>
           </div>
         </div>
       </section>
@@ -68,7 +74,7 @@
       <!-- about -->
       <section class="about">
         <div class="inner">
-          <div class="about-bg"><img src="images/about.jpg" alt="about"></div>
+          <div class="about-bg"><img src="images/about.jpg" alt="about" /></div>
         </div>
       </section>
 
@@ -91,7 +97,7 @@
               <p>
                 여러분이 선택해주신 작은 마음은 <br /><span class="highlight"
                   >유기묘 보호소의 고양이들을 위한 물품</span
-                >으로 <br class="no-br">전해집니다.
+                >으로 <br class="no-br" />전해집니다.
               </p>
               <p>
                 그저 예쁜 것을 고르는 순간이 <br />누군가에겐 따뜻한 하루가
@@ -103,9 +109,102 @@
           </div>
         </div>
       </section>
+
       <!-- donation story-->
+      <section class="donation-story">
+        <div class="inner">
+          <h2>따순해 후원 이야기</h2>
+          <ul class="donation-contents">
+            <li>
+              <img src="images/icons/donation.svg" alt="donation-icon" />
+              <p>2,847</p>
+              <span>후원자</span>
+            </li>
+            <li>
+              <img src="images/icons/box.svg" alt="box-icon" />
+              <p>12,439</p>
+              <span>누적 판매량 </span>
+            </li>
+            <li>
+              <img src="images/icons/cat.svg" alt="cat-icon" />
+              <p>1,062</p>
+              <span>구조된 고양이</span>
+            </li>
+            <li>
+              <img src="images/icons/graf.svg" alt="graf-con" />
+              <p>38M</p>
+              <span>누적 기부금</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- chart -->
+      <section class="chart">
+        <div class="inner">
+          <h2>기부 현황</h2>
+          <p class="chart-p">투명한 기부 내역을 공개합니다.</p>
+          <div class="chart-box">
+            <div class="chart-top">
+              <div class="line">
+                <h3>월별 기부 추이</h3>
+                <canvas id="lineChart"> </canvas>
+              </div>
+              <div class="pie">
+                <h3>기부 항목별 분배</h3>
+                <canvas id="pieChart"></canvas>
+              </div>
+            </div>
+
+            <div class="prograss-container">
+              <div class="progress-txt-top">
+                <p>4월 목표 진행률</p>
+                <p>73%</p>
+              </div>
+              <div class="prograss">
+                <div class="prograss-done" data-done="73"></div>
+              </div>
+              <div class="progress-txt-bot">
+                <p>현재 3,650,000원</p>
+                <p>목표 5,000,000원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- sponsor -->
+      <section class="sponsor">
+        <div class="inner">
+          <h2>최근 후원자</h2>
+          <p>이 달에도 함께해주신 모든 분들께 감사드립니다.</p>
+          <!-- 후원자 목록 -->
+          <ul class="sponsor-list">
+            <li>
+              <p class="username">나비야 사랑해<span>상품 구매 27회</span></p>
+              <p class="price">1,230,000원</p>
+            </li>
+            <li>
+              <p class="username">희망이<span>상품 구매 12회</span></p>
+              <p class="price">530,000원</p>
+            </li>
+            <li>
+              <p class="username">따스한 햇살<span>상품 구매 4회</span></p>
+              <p class="price">86,000원</p>
+            </li>
+            <li>
+              <p class="username">고먐미<span>상품 구매 7회</span></p>
+              <p class="price">127,000원</p>
+            </li>
+            <li>
+              <p class="username">치즈냥<span>상품 구매 32회</span></p>
+              <p class="price">2,107,000원</p>
+            </li>
+          </ul>
+          <!-- btn -->
+          <button class="btn" type="submit">상품 구매하고 기부하기</button>
+        </div>
+      </section>
       <!-- products -->
       <!-- footer -->
     </div>

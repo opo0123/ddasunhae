@@ -1,0 +1,95 @@
+.chart {
+  background-color: var(--bg--common);
+}
+.chart .inner {
+  padding: 15% 0;
+}
+.chart-p {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 12%;
+  color: var(--gray);
+  font-size: clamp(15px, 4vw, 25px);
+}
+
+.chart-top {
+  display: flex;
+  gap: 4%;
+  aspect-ratio: 12/4;
+  /* background-color: #ebccd7; */
+  margin-bottom: 2%;
+}
+.chart-box h3 {
+  font-size: clamp(16px, 2vw, 25px);
+  color: #9d8a74;
+}
+/* line */
+.line {
+  padding: 4%;
+  width: 50% !important;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--btn);
+  /* width: 600px !important; */
+}
+
+/* pie */
+.pie {
+  padding: 4%;
+  width: 50% !important;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--btn);
+  /* height: 580px !important; */
+  /* height: 30vw !important; */
+  /* width: 600px !important; */
+}
+#pieChart {
+  width: 60% !important;
+  height: calc(100% - 30px) !important;
+  margin: auto;
+}
+/* prograss */
+.prograss-container {
+  min-width: 330px;
+  color: #9d8a74;
+  width: 100%;
+  padding: 4%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--btn);
+}
+.progress-txt-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2%;
+  font-size: clamp(16px, 2vw, 30px);
+  font-weight: bold;
+}
+.progress-txt-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2%;
+}
+.prograss {
+  background-color: var(--bg--common);
+  border-radius: 20px;
+  height: 30px;
+  width: 100%;
+}
+
+.prograss-done {
+  background: linear-gradient(to left, #a87a60, #e8b4a0);
+  box-shadow:
+    0 3px 3px -5px #c48b9f,
+    0px 2px 5px #c48b9f;
+  color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 100px;
+  transition: 1s ease;
+}
