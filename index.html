@@ -25,6 +25,7 @@
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/chart.js" defer></script>
+    <script src="js/sponsor.js" defer></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -176,33 +177,58 @@
       <!-- sponsor -->
       <section class="sponsor">
         <div class="inner">
-          <h2>최근 후원자</h2>
-          <p>이 달에도 함께해주신 모든 분들께 감사드립니다.</p>
-          <!-- 후원자 목록 -->
-          <ul class="sponsor-list">
-            <li>
-              <p class="username">나비야 사랑해<span>상품 구매 27회</span></p>
-              <p class="price">1,230,000원</p>
-            </li>
-            <li>
-              <p class="username">희망이<span>상품 구매 12회</span></p>
-              <p class="price">530,000원</p>
-            </li>
-            <li>
-              <p class="username">따스한 햇살<span>상품 구매 4회</span></p>
-              <p class="price">86,000원</p>
-            </li>
-            <li>
-              <p class="username">고먐미<span>상품 구매 7회</span></p>
-              <p class="price">127,000원</p>
-            </li>
-            <li>
-              <p class="username">치즈냥<span>상품 구매 32회</span></p>
-              <p class="price">2,107,000원</p>
-            </li>
-          </ul>
-          <!-- btn -->
-          <button class="btn" type="submit">상품 구매하고 기부하기</button>
+          <div class="sponsor-wrap">
+            <h2>최근 후원자</h2>
+            <p class="thanks">이 달에도 함께해주신 모든 분들께 감사드립니다.</p>
+            <!-- 후원자 목록 -->
+            <ul class="sponsor-list">
+              <li>
+                <p class="username">
+                  나비야 사랑해<span class="buy"
+                    >상품 구매 <br class="br-sp" />27회</span
+                  >
+                </p>
+                <p class="price">1,230,000원</p>
+              </li>
+              <li>
+                <p class="username">
+                  희망이<span class="buy"
+                    >상품 구매 <br class="br-sp" />12회</span
+                  >
+                </p>
+                <p class="price">530,000원</p>
+              </li>
+              <li>
+                <p class="username">
+                  따스한 햇살<span class="buy"
+                    >상품 구매<br class="br-sp" />
+                    4회</span
+                  >
+                </p>
+                <p class="price">86,000원</p>
+              </li>
+              <li>
+                <p class="username">
+                  고먐미<span class="buy"
+                    >상품 구매<br class="br-sp" />
+                    7회</span
+                  >
+                </p>
+                <p class="price">127,000원</p>
+              </li>
+              <li>
+                <p class="username">
+                  치즈냥<span class="buy"
+                    >상품 구매<br class="br-sp" />
+                    32회</span
+                  >
+                </p>
+                <p class="price">2,107,000원</p>
+              </li>
+            </ul>
+            <!-- btn -->
+            <button class="btn" type="submit">상품 구매하고 기부하기</button>
+          </div>
         </div>
       </section>
       <!-- products -->
