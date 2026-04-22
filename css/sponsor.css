@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .sponsor .thanks {
   text-align: center;
@@ -13,7 +14,7 @@
   color: var(--gray);
   font-size: clamp(15px, 4vw, 25px);
 }
-
+/* 
 .sponsor-list {
   position: relative;
   width: 100%;
@@ -36,9 +37,7 @@
   background-color: var(--bg--common);
 }
 
-.sponsor-list li:last-child {
-  margin-bottom: 10%;
-}
+
 .username .buy {
   margin-left: clamp(8px, 2vw, 24px);
 }
@@ -50,8 +49,121 @@
   font-size: clamp(26px, 2vw, 36px);
   display: flex;
   align-items: center;
-}
+} */
 
 .br-sp {
   display: none;
+}
+
+/* 바깥 영역 */
+.holder {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 10%;
+}
+
+/* 플러그인이 생성하는 영역 */
+.tickercontainer {
+  width: 100%;
+  height: 600px; /* 🔥 보이는 영역 높이 */
+  overflow: hidden;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ul 움직임 */
+#ticker01 {
+  position: relative;
+}
+
+/* 카드 스타일 유지 */
+#ticker01 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100px;
+  padding: 2% 4%;
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+  color: var(--brown);
+  box-shadow: var(--btn);
+  background-color: var(--bg--common);
+}
+
+/* 텍스트 */
+#ticker01 li {
+  font-size: clamp(26px, 2vw, 36px);
+  color: var(--brown);
+}
+#ticker01 li span {
+  font-size: clamp(18px, 2vw, 25px);
+  margin-left: clamp(8px, 2vw, 24px);
+}
+
+/* 후원자 목록 tablet, mobile */
+.tickercontainer2 {
+  max-width: 95%;
+  /* width: 100%; */
+  height: 100%; /* 🔥 보이는 영역 높이 */
+  margin-bottom: 0.7%;
+  /* overflow: hidden; */
+}
+.holder2 {
+  display: none;
+  overflow: hidden;
+}
+.mask2 {
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+}
+.ticker02 ul {
+  /* overflow: hidden; */
+  display: flex;
+  gap: 0.3%;
+}
+
+.ticker02 ul li {
+  min-width: 230px;
+  max-width: 250px;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0.5% 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8%;
+  background-color: var(--bg--common);
+  border-radius: 10px;
+  box-shadow: var(--btn);
+}
+.ticker02 li img {
+  border-radius: 50%;
+  width: clamp(90px, 2vw, 110px);
+  height: clamp(90px, 2vw, 110px);
+  /* width: 100px;
+  height: 100px; */
+}
+
+.ticker02 li {
+  font-size: clamp(26px, 2vw, 36px);
+  color: var(--brown);
+}
+.ticker02 li span {
+  font-size: clamp(18px, 2vw, 25px);
+  margin-top: clamp(8px, 2vw, 24px);
+}
+.sponsor .btn {
+  font-size: clamp(14px, 5vw, 26px);
+  padding: 3% 3.5%;
 }

@@ -75,6 +75,20 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 60px;
   }
+
+  /* sponsor */
+  .holder2 {
+    display: block;
+  }
+  .holder {
+    display: none;
+  }
+  .ticker02 li span {
+    display: block;
+  }
+  .br-sp {
+    display: block;
+  }
 }
 
 /* mobile */
