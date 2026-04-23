@@ -7,3 +7,5 @@
 # sponsor pc 작업, 내일 코드펜 추가하고 시작하기
 
 # 코드펜 추가 및 sponsor js 수정 및 반응형 적용 (sponsor 완료)
+
+# 메뉴 호버 수정, donation count js 추가, 로고 디자인

@@ -23,8 +23,15 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/donation.js" defer></script>
     <script src="js/chart.js" defer></script>
     <script src="js/sponsor.js" defer></script>
   </head>
@@ -36,7 +43,7 @@
         <!-- logo -->
         <a href="#"
           ><div class="logo">
-            <img src="images/logo.jpeg" alt="logo" />
+            <img src="images/Group 80.svg" alt="logo" />
             <p>따순해</p>
           </div></a
         >
@@ -119,22 +126,22 @@
           <ul class="donation-contents">
             <li>
               <img src="images/icons/donation.svg" alt="donation-icon" />
-              <p>2,847</p>
+              <div class="counter" data-count="2589" data-type="comma">0</div>
               <span>후원자</span>
             </li>
             <li>
               <img src="images/icons/box.svg" alt="box-icon" />
-              <p>12,439</p>
+              <div class="counter" data-count="12469" data-type="comma">0</div>
               <span>누적 판매량 </span>
             </li>
             <li>
               <img src="images/icons/cat.svg" alt="cat-icon" />
-              <p>1,062</p>
+              <div class="counter" data-count="1042" data-type="comma">0</div>
               <span>구조된 고양이</span>
             </li>
             <li>
               <img src="images/icons/graf.svg" alt="graf-con" />
-              <p>38M</p>
+              <div class="counter" data-count="38" data-type="million">0</div>
               <span>누적 기부금</span>
             </li>
           </ul>
@@ -442,12 +449,36 @@
       </section>
 
       <!-- products -->
-       <section class="products">
+      <section class="products">
         <div class="inner">
-          <h2>따순해의 인기 상품</h2>
-          <!-- 여기서 부터 작업 0423 -->
+          <div class="products-wrap">
+            <h2>따순해의 인기 상품</h2>
+            <p>모든 구매 금액의 일부는 유기묘 보호소에 물품으로 후원됩니다.</p>
+            <ul class="product-list">
+              <li>
+                <!-- card -->
+                <a href="#">
+                  <div class="product-card">
+                    <!-- img -->
+                    <div class="img">
+                      <img src="images/products/p1.jpg" alt="상품1" />
+                    </div>
+                    <!-- title -->
+                    <div class="product-card-top">
+                      <h4>유기묘 후원 원석팔찌 내 팔에 고양이</h4>
+                    </div>
+                    <div class="product-card-bot">
+                      <!-- price -->
+
+                      <!-- free / review -->
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-       </section>
+      </section>
       <!-- footer -->
     </div>
   </body>

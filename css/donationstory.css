@@ -26,7 +26,7 @@
   border-radius: 50%;
 }
 
-.donation-contents p {
+.counter {
   font-size: clamp(24px, 2vw, 36px);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
