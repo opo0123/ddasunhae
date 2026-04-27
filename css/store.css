@@ -1,0 +1,117 @@
+.products .inner {
+  padding: 15% 0;
+}
+.products-p {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 12%;
+  color: var(--gray);
+  font-size: clamp(15px, 4vw, 25px);
+}
+
+/* 리스트 */
+.product-list {
+  display: flex;
+  align-items: stretch;
+  /* width: 100%; */
+  /* width: calc((100%-8%) / 5); */
+  flex-wrap: wrap;
+  gap: 2%;
+  row-gap: 30px;
+  margin-bottom: 10%;
+}
+
+/* 카드 */
+.product-list li {
+  width: calc((100% - 8%) / 5);
+  display: flex;
+  box-shadow: var(--btn);
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+.product-list li a {
+  display: flex;
+  width: 100%;
+}
+.product-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product-card-img img {
+  /* max-width: 250px;
+  min-width: 200px; */
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.product-card-txt {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 4%;
+}
+/* 상품 이름 */
+.product-card-top h4 {
+  /* height: 70px; */
+  line-height: 1.5;
+  font-size: clamp(14px, 4vw, 18px);
+  font-weight: 600;
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+}
+
+.product-card-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-top: auto;
+}
+
+/* 가격 */
+.product-price {
+  font-size: clamp(14px, 4vw, 18px);
+  font-weight: bold;
+  color: #333;
+  /* margin-top: 15px; */
+  font-family: "Inter", sans-serif !important;
+}
+
+/* 무료배송, 리뷰 */
+.product-card-bot-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.free {
+  display: flex;
+  width: 50px;
+  height: 20px;
+  margin-bottom: 1%;
+}
+.review {
+  font-family: "Inter", sans-serif !important;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(12px, 4vw, 13px);
+}
+.review img {
+  max-width: 15px;
+  min-width: 10px;
+  margin-top: 2%;
+}
+.products-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+.products .btn {
+  min-width: 110px;
+  padding: 2% 4%;
+  font-size: clamp(14px, 2vw, 30px);
+}

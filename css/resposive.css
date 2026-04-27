@@ -5,6 +5,10 @@
     font-size: 22px;
     gap: 6%; /* 10% */
   }
+  /* store */
+  /* .product-list li {
+  width: calc((100% - 6%) / 4);
+} */
 }
 /* chart */
 @media (max-width: 1000px) {
