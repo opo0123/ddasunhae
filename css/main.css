@@ -4,6 +4,7 @@
 
 /* css */
 @import url("reset.css");
+@import url("modal.css");
 @import url("header.css");
 @import url("visual.css");
 @import url("about.css");
