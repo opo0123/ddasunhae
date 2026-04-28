@@ -1,3 +1,6 @@
+.products {
+  background-color: var(--bg--common);
+}
 .products .inner {
   padding: 15% 0;
 }
@@ -56,7 +59,7 @@
 .product-card-top h4 {
   /* height: 70px; */
   line-height: 1.5;
-  font-size: clamp(14px, 4vw, 18px);
+  font-size: clamp(16px, 4vw, 18px);
   font-weight: 600;
   color: #000;
   font-family: "Inter", sans-serif !important;
@@ -66,13 +69,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
   margin-top: auto;
 }
 
 /* 가격 */
 .product-price {
-  font-size: clamp(14px, 4vw, 18px);
+  font-size: clamp(16px, 4vw, 18px);
   font-weight: bold;
   color: #333;
   /* margin-top: 15px; */
@@ -113,5 +115,5 @@
 .products .btn {
   min-width: 110px;
   padding: 2% 4%;
-  font-size: clamp(14px, 2vw, 30px);
+  font-size: clamp(16px, 3vw, 30px);
 }
