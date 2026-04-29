@@ -1,5 +1,6 @@
 .sponsor .inner {
-  padding: 15% 0;
+  /* padding: 15% 0; */
+     padding: clamp(75px, 12vw, 180px) 0;
 }
 .sponsor-wrap {
   display: flex;

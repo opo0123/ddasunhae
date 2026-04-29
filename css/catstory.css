@@ -3,7 +3,8 @@
   background-color: #f7f1e5;
 }
 .cat-story .inner {
-  padding: 15% 0;
+  /* padding: 15% 0; */
+   padding: clamp(75px, 12vw, 180px) 0;
 }
 
 /* title */

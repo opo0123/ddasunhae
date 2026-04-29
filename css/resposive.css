@@ -30,6 +30,9 @@
   .product-list li {
     width: calc((100% - 4%) / 3);
   }
+  .product-card-txt {
+    gap: 12px;
+  }
 }
 
 /* tablet */
@@ -108,6 +111,9 @@
   .product-card-top h4 {
     font-size: clamp(18px, 4vw, 24px);
   } */
+  .product-card-txt {
+    gap: 16px;
+  }
   .products-btns {
     display: flex;
     flex-direction: column;
@@ -126,6 +132,9 @@
   .product-price,
   .product-card-top h4 {
     font-size: clamp(18px, 4vw, 24px);
+  }
+  .product-card-txt {
+    gap: 26px;
   }
 }
 

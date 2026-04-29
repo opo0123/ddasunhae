@@ -2,7 +2,8 @@
   background-color: var(--bg--common);
 }
 .chart .inner {
-  padding: 15% 0;
+  /* padding: 15% 0; */
+     padding: clamp(75px, 12vw, 180px) 0;
 }
 .chart-p {
   text-align: center;
