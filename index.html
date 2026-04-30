@@ -23,18 +23,27 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      var $jq3 = jQuery.noConflict(true);
+    </script>
+
+    <!-- 새로 추가할 jQuery 1.12.3 -->
+    <script src="js/jquery-1.12.3.js"></script>
+
+    <!-- cookie plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <script>
+      var $jq1 = jQuery.noConflict(true);
+    </script>
+
     <script src="js/donation.js" defer></script>
     <script src="js/chart.js" defer></script>
     <script src="js/sponsor.js" defer></script>
-    <script src="js/modal_gotop.js"></script>
+    <script src="js/modal_gotop.js" defer></script>
+    <script src="js/modal-cookie.js" defer></script>
   </head>
   <body>
     <!-- modal -->
@@ -42,17 +51,26 @@
       <div class="modal-box">
         <!-- 이미지 -->
         <!-- <div class="modal-img"></div> -->
-          <div class="modal-text">
-            <h2>
-              당신의 <strong>첫 선택</strong>에 <br /><strong
-                >작은 따뜻함</strong
-              >을 더해드릴게요
-            </h2>
-            <p>첫 구매 5,000원 할인<br />+<br />고양이 엽서 랜덤 증정</p>
+        <div class="modal-text">
+          <h2>
+            당신의 <strong>첫 선택</strong>에 <br /><strong>작은 따뜻함</strong
+            >을 더해드릴게요
+          </h2>
+          <p>첫 구매 5,000원 할인<br />+<br />고양이 엽서 랜덤 증정</p>
+        </div>
+        <button class="btn modal-btn">따뜻함 더하러 가기</button>
+
+        <!-- modal close -->
+        <div class="closeWrap">
+          <!-- check box : 3일 동안 열지 않기 -->
+          <div class="checkbtn">
+            <input type="checkbox" id="chk" />
+            <label for="chk">3일 동안 열지 않기</label>
           </div>
-          <button class="btn modal-btn">따뜻함 더하러 가기</button>
-          <!-- modal close -->
-          <div class="modalClose"><i>×</i></div>
+
+          <!-- close btn -->
+          <button class="closeBtn">닫기 X</button>
+        </div>
       </div>
     </div>
     <!-- 전체 레이아웃 -->

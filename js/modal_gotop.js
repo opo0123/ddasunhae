@@ -1,11 +1,11 @@
 window.addEventListener("load", function () {
   // 모달창 닫기
   const modalWrap = this.document.querySelector(".modal-wrap");
-  const modalClose = this.document.querySelector(".modalClose");
+  const modalClose = this.document.querySelector(".closeBtn");
   modalClose.addEventListener("click", () => {
-    modalWrap.style.display = "none"
+    modalWrap.style.display = "none";
   });
-  
+
   // gotop 스크롤 이벤트
   // 변수 선언
   const gotop = this.document.querySelector("#gotop");

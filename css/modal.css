@@ -1,4 +1,5 @@
 .modal-wrap {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,16 +8,17 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 99999;
 }
+
 .modal-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
-  max-height: 600px;
-  width: min(80vw, 450px);
+  width: 450px;
+  /* height: 600px; */
+  /* width: min(80vw, 450px); */
   /* height: min(80vw, 600px); */
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
 
   display: flex;
   flex-direction: column;
@@ -59,22 +61,25 @@
 }
 
 .modal-text h2 {
-  font-size: clamp(16px, 2vw, 24px);
+  /* font-size: clamp(16px, 2vw, 24px); */
+  font-size: 24px;
 }
 .modal-text strong {
   color: #e47242;
 }
 .modal-text p {
-  font-size: clamp(12px, 2vw, 18px);
+  /* font-size: clamp(12px, 2vw, 18px); */
+  font-size: 18px;
   font-weight: 500;
   margin: 25px 0;
 }
 
 .modal-btn {
   padding: 3% 5% !important;
-  font-size: clamp(12px, 2vw, 16px) !important;
+  /* font-size: clamp(12px, 2vw, 16px) !important; */
+  font-size: 16px !important;
   background-color: #ffbd87 !important;
-  margin-bottom: 5%;
+  /* margin-bottom: 2%; */
 }
 .modal-btn:hover {
   background-color: #f1a362 !important;
@@ -90,4 +95,27 @@
   justify-content: flex-end;
   color: #fdc89e;
   cursor: pointer;
+}
+
+/* 닫기 버튼 */
+.closeWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 4%;
+}
+#chk {
+  width: 12px;
+  height: 12px;
+  accent-color: #f1a362;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.closeBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
 }

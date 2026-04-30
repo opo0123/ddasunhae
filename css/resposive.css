@@ -37,9 +37,24 @@
 
 /* tablet */
 @media (max-width: 768px) {
+  /* modal */
+  .modal-box {
+    width: 350px;
+  }
+  .modal-text h2 {
+    font-size: 20px;
+  }
+  .modal-text p {
+    font-size: 14px;
+  }
+  .modal-btn {
+    font-size: 14px !important;
+  }
+
   .inner {
     width: 85% !important;
   }
+
   /* header */
   .menu {
     display: none;
@@ -140,4 +155,17 @@
 
 /* mobile */
 @media (max-width: 390px) {
+  /* modal */
+  .modal-box {
+    width: 300px;
+  }
+  .modal-text h2 {
+    font-size: 18px;
+  }
+  .modal-text p {
+    font-size: 12px;
+  }
+  .modal-btn {
+    font-size: 12px !important;
+  }
 }
