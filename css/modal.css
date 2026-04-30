@@ -99,12 +99,16 @@
 
 /* 닫기 버튼 */
 .closeWrap {
+  font-size: 14px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 4%;
+}
+.checkbtn {
+  font-size: 14px;
 }
 #chk {
   width: 12px;

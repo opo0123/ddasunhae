@@ -168,4 +168,14 @@
   .modal-btn {
     font-size: 12px !important;
   }
+  .checkbtn {
+    font-size: 12px;
+  }
+  #chk {
+    width: 10px;
+    height: 10px;
+  }
+  .closeBtn {
+    font-size: 12px;
+  }
 }
