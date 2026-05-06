@@ -9,8 +9,11 @@ window.addEventListener("load", function () {
   // gotop 스크롤 이벤트
   // 변수 선언
   const gotop = this.document.querySelector("#gotop");
+  const section = this.document.querySelector(".about");
   this.window.addEventListener("scroll", () => {
-    if (this.document.documentElement.scrollTop > 800) {
+    const scrollTop = section.offsetTop;
+    const scrollY = this.window.scrollY;
+    if (scrollY >= scrollTop) {
       gotop.style.display = "block";
     } else {
       gotop.style.display = "none";

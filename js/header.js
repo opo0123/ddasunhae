@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
   const header = document.querySelector(".header");
   const mbt = document.querySelector(".hambuger");
   const navMb = document.querySelector(".nav-mb");
+  const menuLinks = document.querySelectorAll(".nav-mb-gnb a");
 
   // 모바일 메뉴 클릭 시
   const htmlRoot = document.querySelector("html"); // html 전체 담기
@@ -23,6 +24,15 @@ window.addEventListener("load", () => {
       // window 스크롤바 삭제
       htmlRoot.classList.add("active");
     }
+  });
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // 1. 모바일 메뉴 닫기
+      navMb.classList.remove("active");
+      mbt.classList.remove("ani");
+      header.classList.remove("active");
+      htmlRoot.classList.remove("active"); // 스크롤 다시 활성화
+    });
   });
 
   // 반응형 처리 (mobile -> pc 전환될 때) - 모바일 메뉴창 삭제 (초기화)

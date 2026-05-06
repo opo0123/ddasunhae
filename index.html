@@ -44,6 +44,7 @@
     <script src="js/sponsor.js" defer></script>
     <script src="js/modal_gotop.js" defer></script>
     <script src="js/header.js" defer></script>
+    <script src="js/link.js" defer></script>
     <script src="js/modal-cookie.js" defer></script>
   </head>
   <body>
@@ -80,37 +81,37 @@
       <!-- header -->
       <header class="header">
         <div class="inner">
-        <!-- logo -->
-        <a href="#"
-          ><div class="logo">
-            <img src="images/Group 80.svg" alt="logo" />
-            <p>따순해</p>
-          </div></a
-        >
+          <!-- logo -->
+          <a href="#"
+            ><div class="logo">
+              <img src="images/Group 80.svg" alt="logo" />
+              <p>따순해</p>
+            </div></a
+          >
 
-        <!-- menu -->
-        <div class="menu-wrap">
-          <ul class="menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Story</a></li>
-            <li><a href="#">Donation</a></li>
-            <li><a href="#">Products</a></li>
-          </ul>
+          <!-- menu -->
+          <div class="menu-wrap">
+            <ul class="menu">
+              <li><a href="#about">About</a></li>
+              <li><a href="#story">Story</a></li>
+              <li><a href="#donation">Donation</a></li>
+              <li><a href="#products">Products</a></li>
+            </ul>
+          </div>
+          <!-- mobile menu -->
+          <button class="hambuger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <!-- mobile menu -->
-        <button class="hambuger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-</div>
         <!-- 모바일 gnb -->
         <div class="nav-mb">
           <ul class="nav-mb-gnb">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Story</a></li>
-            <li><a href="#">Donation</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#donation">Donation</a></li>
+            <li><a href="#products">Products</a></li>
           </ul>
         </div>
       </header>
@@ -119,7 +120,7 @@
       <div class="quick">
         <!-- help -->
         <div class="help">
-          <a href="#" id="chat">
+          <a href="https://smartstore.naver.com/ddasunhae" id="chat">
             <img src="images/quick.png" alt="퀵메뉴" />
             <span>뽀뿌 엽서 받으러 가기</span>
           </a>
@@ -144,14 +145,14 @@
       </section>
 
       <!-- about -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="inner">
           <div class="about-bg"><img src="images/about.jpg" alt="about" /></div>
         </div>
       </section>
 
       <!-- cat story -->
-      <section class="cat-story">
+      <section class="cat-story" id="story">
         <div class="inner">
           <!-- title -->
           <h2>따순해 고양이 이야기</h2>
@@ -183,7 +184,7 @@
       </section>
 
       <!-- donation story-->
-      <section class="donation-story">
+      <section class="donation-story" id="donation">
         <div class="inner">
           <h2>따순해 후원 이야기</h2>
           <ul class="donation-contents">
@@ -512,7 +513,7 @@
       </section>
 
       <!-- products -->
-      <section class="products">
+      <section class="products" id="products">
         <div class="inner">
           <div class="products-wrap">
             <h2>따순해의 인기 상품</h2>
@@ -835,7 +836,7 @@
             </ul>
             <div class="products-btns">
               <button class="btn" type="submit">스마트 스토어 바로가기</button>
-              <button class="btn" type="submit">에이블리 바로가기</button>
+              <button class="btn2" type="submit">에이블리 바로가기</button>
             </div>
           </div>
         </div>

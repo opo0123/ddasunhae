@@ -3,7 +3,7 @@
 }
 .products .inner {
   /* padding: 15% 0; */
-     padding: clamp(75px, 12vw, 180px) 0;
+  padding: clamp(75px, 12vw, 180px) 0;
 }
 .products-p {
   text-align: center;
@@ -115,7 +115,8 @@
   justify-content: center;
   gap: 2%;
 }
-.products .btn {
+.products .btn,
+.products .btn2 {
   min-width: 110px;
   padding: 2% 4%;
   font-size: clamp(16px, 3vw, 30px);
