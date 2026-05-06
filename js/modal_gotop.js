@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
   // 변수 선언
   const gotop = this.document.querySelector("#gotop");
   this.window.addEventListener("scroll", () => {
-    if (this.document.documentElement.scrollTop > 1000) {
+    if (this.document.documentElement.scrollTop > 800) {
       gotop.style.display = "block";
     } else {
       gotop.style.display = "none";

@@ -37,6 +37,21 @@
 
 /* tablet */
 @media (max-width: 768px) {
+  /* gotop */
+  #chat img {
+    width: 45px;
+    height: 45px;
+  }
+  #chat span {
+    position: absolute;
+    top: 6px;
+    left: -390%;
+    font-size: 14px;
+  }
+  #gotop {
+    width: 45px;
+    line-height: 45px;
+  }
   /* modal */
   .modal-box {
     width: 350px;
@@ -61,6 +76,34 @@
   }
   .hambuger {
     display: block;
+  }
+
+  /* 스크롤 방지 */
+  html.active,
+  body.active {
+    overflow: hidden;
+  }
+  .hambuger span:nth-child(1) {
+    top: 0;
+    transform-origin: 0 50%;
+    transition: all 0.3s;
+  }
+  .hambuger.ani span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .hambuger span:nth-child(2) {
+    top: 50%;
+  }
+  .hambuger.ani span:nth-child(2) {
+    opacity: 0;
+  }
+  .hambuger span:nth-child(3) {
+    top: 100%;
+    transform-origin: 0 50%;
+    transition: all 0.3s;
+  }
+  .hambuger.ani span:nth-child(3) {
+    transform: rotate(-45deg);
   }
 
   /* visual */
@@ -140,6 +183,7 @@
     font-size: clamp(14px, 3vw, 20px);
   }
 }
+
 @media (max-width: 600px) {
   .product-list li {
     width: 100%;

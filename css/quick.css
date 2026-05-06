@@ -9,17 +9,27 @@
   align-items: center;
   z-index: 999999;
 }
+html.active .quick,
+body.active .quick {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 #chat img {
-  width: 55px;
-  height: 55px;
+  display: block;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
+  border: none;
   box-shadow: var(--btn);
+  overflow: hidden;
 }
 
 #chat span {
   position: absolute;
-  top: 15%;
-  left: -390%;
+  top: 13px;
+  left: -330%;
   padding: 8px 15px;
   border-radius: 25px;
   box-shadow: var(--btn);
@@ -40,8 +50,8 @@
 
 /* 수정하기 */
 #gotop {
-  width: 55px;
-  line-height: 55px;
+  width: 65px;
+  line-height: 65px;
   text-align: center;
   border-radius: 50%;
   color: #fff;
