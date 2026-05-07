@@ -78,14 +78,14 @@
   padding: 3% 5% !important;
   /* font-size: clamp(12px, 2vw, 16px) !important; */
   font-size: 16px !important;
-  background-color: #ffbd87 !important;
+  background-color: rgb(211, 134, 70) !important;
   /* margin-bottom: 2%; */
 }
 .modal-btn:hover {
-  background-color: #f1a362 !important;
+  background-color: rgb(209, 117, 41) !important;
 }
 
-/* 하루동안 보지 않기 추가 예정 */
+/* 3일 동안 보지 않기 추가 */
 .modalClose {
   position: absolute;
   bottom: 10px;
