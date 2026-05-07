@@ -6,7 +6,13 @@ window.addEventListener("load", () => {
   const btnSp = document.querySelector(".sponsor-wrap .btn");
   const btnP1 = document.querySelector(".products-btns .btn");
   const btnP2 = document.querySelector(".products-btns .btn2");
+  const btnM = document.querySelector(".modal-btn");
 
+
+  btnM.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.open("https://smartstore.naver.com/ddasunhae", "_blank");
+  });
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     window.open("https://smartstore.naver.com/ddasunhae", "_blank");

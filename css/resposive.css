@@ -1,5 +1,8 @@
 /* pc2 */
 @media (max-width: 1200px) {
+  .inner {
+    width: 90% !important;
+  }
   /* header */
   .menu {
     font-size: 22px;
