@@ -237,4 +237,10 @@
   .closeBtn {
     font-size: 12px;
   }
+.cat-left .br-m {
+  display: block !important;
+}
+.mm {
+  display: none;
+}
 }
