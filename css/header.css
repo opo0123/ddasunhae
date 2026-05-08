@@ -1,6 +1,8 @@
 .wrap {
   position: relative;
 }
+/* 모바일 헤더 높이 줄이기 */
+/* 모바일 메뉴 위치도 조정해야댐!! */
 .header {
   position: fixed;
   top: 0;
@@ -30,12 +32,12 @@
   text-align: center;
   align-items: center;
   gap: 5%;
-  font-size: 30px;
+  font-size: (25px, 4vw, 30px);;
   color: #9d8a74;
 }
 .logo img {
-  width: clamp(70px, 4vw, 85px);
-  height: clamp(70px, 4vw, 90px);
+  width: clamp(50px, 4vw, 85px);
+  height: clamp(50px, 4vw, 90px);
 }
 .logo p {
   white-space: nowrap;
@@ -96,7 +98,7 @@
   display: none;
   position: relative;
   min-width: 30px;
-  width: 40px;
+  /* width: 40px; */
   height: 20px;
   border: 0;
   background: none;
@@ -129,11 +131,11 @@
 .nav-mb {
   /* display: none; */
   position: absolute;
-  top: 100px;
+  top: 70px;
   left: 100%;
   width: 100%;
   /* 100vh - header(70px) */
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   padding-top: 30px;
   background-color: #fff;
   opacity: 0;

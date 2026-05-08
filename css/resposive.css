@@ -40,6 +40,12 @@
 
 /* tablet */
 @media (max-width: 768px) {
+  .header {
+  height: 70px;
+}
+.visual {
+  margin-top: 70px;
+}
   /* gotop */
   #chat img {
     width: 45px;
