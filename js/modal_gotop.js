@@ -1,9 +1,12 @@
 window.addEventListener("load", function () {
+  document.body.classList.add("active"); // 처음에 퀵메뉴 안보이게
+
   // 모달창 닫기
   const modalWrap = this.document.querySelector(".modal-wrap");
   const modalClose = this.document.querySelector(".closeBtn");
   modalClose.addEventListener("click", () => {
     modalWrap.style.display = "none";
+    document.body.classList.remove("active"); // 닫으면 퀵메뉴 생김
   });
 
   // gotop 스크롤 이벤트
